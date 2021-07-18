@@ -61,6 +61,20 @@ class _UpdateDataState extends State<UpdateData> {
         'offer': offer
       });
       setState(() => id = ref.id);
+      showDialog(context: context,
+      builder: (ctx) => AlertDialog(
+        title: Text('Submitted'),
+        content: Text('Product Data is successfully uploaded to database'),
+        actions: <Widget>[
+          FlatButton(
+            onPressed: () {
+              Navigator.of(ctx).pop();
+            },
+            child: Text('OK'),
+          )
+        ],
+      ),);
+      
       print(ref.id);
     }
   }

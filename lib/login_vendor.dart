@@ -1,6 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:vendor_app/newdata.dart';
 import 'package:vendor_app/vendorhome.dart';
 
 class VendorLogin extends StatefulWidget {
